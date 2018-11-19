@@ -1,7 +1,5 @@
 html {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -12,13 +10,9 @@ body {
   margin: 0;
 }
 
-.div-image {
-  position: absolute;
-  max-width: 50em;
-  top: 50%;
-  left: 50%;
+.img-flex {
+  display: block;
   width: 100%;
-  transform: translateX(-50%);
 }
 
 .banner {
@@ -27,37 +21,25 @@ body {
   overflow: hidden;
 }
 
-.banner-content {
-  position: absolute;
-  max-width: 50em;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
-  overflow: hidden;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
 .left {
-  width: 30%;
   float: left;
+  width: 40%;
 }
 
 .right {
   float: right;
-  width: 65%;
+  width: 60%;
 }
 
-.img-circle {
+.left-right {
+  overflow: hidden;
+  position: absolute;
+  top: 2rem;
+
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-}
-
-h1 {
-  margin: 0;
+  max-width: 50em;
 }
 
 h2 {
@@ -66,37 +48,28 @@ h2 {
 }
 
 p {
+  font-family: Roboto, sans-serif;
   font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
+  line-height: 1.5;
 }
 
-.banner-content h2,
-.banner-content p {
-  margin: 0;
+.btn-big {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
 }
 
 .btn {
   display: inline-block;
-  font-size: 1.125rem;
-  text-decoration: none;
-  float: left;
-}
-
-a {
-  text-decoration: none;
   padding: .4em .75em .3em;
+  border: 3px solid #333;
+  background-color: #333;
   border-radius: 8px;
-  border-width: 3px;
-  text-align: center;
-}
-
-.btn-big {
   color: #fff;
-  background-color: #000;
+  text-decoration: none;
 }
 
 .btn:hover {
   background-color: #000;
-  border-color: #000;
+  border: 3px solid #000;
+  cursor: pointer;
 }
