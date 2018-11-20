@@ -1,7 +1,7 @@
-
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5 Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -12,67 +12,72 @@ body {
   margin: 0;
 }
 
-article {
+.banner {
   position: relative;
-  overflow: hidden;
   max-height: 500px;
+  overflow: hidden;
 }
 
 .img-flex {
-  width: 100%;
   display: block;
-}
-
-.banner {
-  position: absolute;
   width: 100%;
-  max-width: 785px;
+}
+
+.logo {
+  width: 33%;
+  align-items: flex-start;
+}
+
+.banner-content {
+  display: flex;
+  padding: 0 1em;
+  width: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   top: 50%;
-  overflow: hidden;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1000;
+  max-width: 45em;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.inner-ban {
-  float: left;
-  width: 35%;
-  padding: 2rem 1rem 1rem;
-}
-
-.inner-ban-right {
-  width: 65%;
-  padding: 2rem;
-  float: right;
+.text {
+  margin: 0;
+  width: 60%;
 }
 
 h2 {
+  line-height: 1.2;
   font-family: "Roboto Condensed", sans-serif;
+  margin: 0 0 .5rem;
   font-size: 3rem;
-  line-height: 1.25;
-  margin: 0;
+  font-weight: bold;
 }
 
 p {
   font-size: 1.5rem;
-  margin-top: 0;
+  margin: 0 0 1.25rem;
 }
 
 .btn {
+  display: inline-block;
+  padding: .5em .8em .57em;
+  font-size: 1.125rem;
+  border-radius: 8px;
   text-decoration: none;
   color: #fff;
   background-color: #333;
-  padding: .4em .75em;
-  font-size: 1.125rem;
-  border-radius: 8px;
-  border: 3px solid #333;
-  display: inline-block;
-}
-
-.btn:hover {
-  background-color: #000;
-  border: 3px solid #000;
 }
 
 .btn-big {
   font-size: 1.5rem;
+}
+
+span {
+  font-family: Roboto, sans-serif;
+}
+
+.btn:hover {
+  background-color: #000;
 }
